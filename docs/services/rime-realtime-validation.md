@@ -22,6 +22,6 @@ Audio scenarios are in `evals/release/scenarios/scripted/rime_prism_audio.yaml`.
 
 Public endpoint checks on October 27, 2026 used SDK `0.1.0a24` and the Rime aggregator pair with direct output and a LiveKit room. Both runs passed spoken turns without extra proactive replies, typed recall, three caller interruptions followed by spoken turns, application interruption, and explicit history replacement. All eight playback-truncation acknowledgments reached `on_rime_event` with `kept_text` available. Populated prompt-exclusion summaries were tested with the local peer. All owned clients closed, and the test room was absent after cleanup.
 
-The caller used synthetic speech. Checks compared provider text with expected content and verified nonzero output audio. They did not independently transcribe the generated audio. These checks do not establish reliable use of tools replaced during a session; that provider behavior remains unresolved.
+The caller used synthetic speech. Checks compared provider text with expected content and verified nonzero output audio. They did not independently transcribe the generated audio.
 
 Playback positions are estimates. Device timing, physical audibility, and remote listener timing are not measured by this implementation.
